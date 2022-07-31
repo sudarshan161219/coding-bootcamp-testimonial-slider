@@ -23,9 +23,6 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
-	line-height: 1;
-}
 ol, ul {
 	list-style: none;
 }
@@ -54,10 +51,10 @@ table {
     scroll-behavior: smooth;
   }
   
-  @page {
+  /* @page {
     size: auto;
     margin: 0;
-}
+} */
 
 
 :root{
@@ -68,6 +65,7 @@ table {
 body {
     display: flex;
     flex-direction: column;
+    min-height: 85vh;
     font-family: 'Inter', sans-serif;
      margin: 1.5rem;
   }
@@ -140,9 +138,9 @@ body {
     display: flex;
     width: 75px;
     height: 40px;
-    background-color: beige;
+    background-color: #fff;
     justify-content: space-between;
-    padding: 0 0.6rem;
+    padding: 0.6rem 0.8rem;
     border-radius: 20px;
     align-items: center;
     top: -44px;
