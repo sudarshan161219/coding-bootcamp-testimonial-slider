@@ -7,22 +7,19 @@ const prevBtn = document.querySelectorAll('.previous');
 
 const img = document.querySelectorAll('.product-img');
 
-const heading = document.querySelector('.heading-one');
-const paragraph = document.querySelector('.paragraph-one');
+const heading1 = document.querySelector('.h1');
+const heading2 = document.querySelector('.h2');
+const paragraph = document.querySelector('.p');
 
-const desktopHeading = document.querySelector('.desktop-heading-one');
-const desktopParagraph = document.querySelector('.desktop-paragraph-one');
 
-const nav = document.querySelector('.menu');
-const menu = document.querySelector('.navigation')
-const close = document.querySelector('.close');
-const background = document.querySelector('.background')
+window.addEventListener("DOMContentLoaded", function(){
+   text ()
+   });
+
 
 
 slides.forEach(function (slide, index) {
     slide.style.left = `${index * 100}%`;
-
-    
  });
 
 
@@ -31,10 +28,7 @@ nextBtn.forEach(function (next) {
    next.addEventListener("click", function () {
       counter++;
       carousel();
-    //   text ()
-    
-          
- 
+      text ();      
    });
 });
 
@@ -43,7 +37,7 @@ prevBtn.forEach(function (previous) {
    previous.addEventListener("click", function () {
       counter--;
       carousel();
-    //   text ()
+      text();
    });
 });
 
@@ -63,4 +57,26 @@ function carousel() {
     });
 
   
+ }
+
+ function text(){
+  
+
+
+ if(counter === (slides.length = 0) ){
+   heading1.textContent = `“ I’ve been interested in coding for a while but never taken the jump, until now. 
+   I couldn’t recommend this course enough. I’m now in the job of my dreams and so 
+   excited about the future. ”`
+   heading2.textContent = `Tanya Sinclair`
+   paragraph.textContent = `UX Engineer`
+  }
+
+if(counter === (slides.length = 1) ){
+   heading1.textContent = `“ If you want to lay the best foundation possible I’d recommend taking this course. 
+   The depth the instructors go into is incredible. I now feel so confident about 
+   starting up as a professional developer. ”`
+   heading2.textContent = `John Tarkpor`
+   paragraph.textContent = `Junior Front-end Developer`
+}
+
  }
