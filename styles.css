@@ -44,17 +44,14 @@ table {
     box-sizing: border-box;
   }
   
-  html, body {
+  html{
+    height: 100%;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
     scroll-behavior: smooth;
   }
   
-  /* @page {
-    size: auto;
-    margin: 0;
-} */
 
 
 :root{
@@ -68,6 +65,10 @@ body {
     min-height: 85vh;
     font-family: 'Inter', sans-serif;
      margin: 1.5rem;
+     background-image: url("./images/pattern-curve.svg");
+     background-repeat: no-repeat;
+     background-position: bottom;
+     background-size: contain;
   }
 
   .container{
@@ -79,10 +80,6 @@ body {
     grid-gap:50px ;
   }
 
-  /* .two-divs:not(.np) {
-    display: grid;
-    grid-gap:10px ;
-} */
   
   .bg-img{
     width: 100%;
@@ -194,6 +191,10 @@ body {
 }
 
 .content{
+background-image: url("./images/pattern-quotes.svg");
+background-repeat: no-repeat;
+background-size: 90px;
+background-position: top;
   display: grid;
   justify-content: center;
   text-align: center;
