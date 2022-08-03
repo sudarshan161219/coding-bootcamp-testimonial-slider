@@ -75,32 +75,37 @@ body {
     position: relative;
   }
 
-  .two-divs{
+  .two-divs {
     display: grid;
-    grid-gap:50px ;
-  }
+    grid-gap: 50px;
+    justify-items: center;
+}
 
   
-  .bg-img{
-    width: 100%;
+
+
+  .bg-img {
+    display: inline-block;
+    width: 272px;
     z-index: -1;
     position: absolute;
-  }
+}
+
 .background-img{
     position: relative;
 }
 
-.slider{
+.slider {
   display: flex;
   justify-content: center;
-  height: 210px;
+  height: 216px;
 }
 
 
 .slider-container {
     justify-items: center;
     display: grid;
-    width: 68vw;
+    width: 213px;
     height: 100%;
     max-width: 80rem;
     position: relative;
@@ -131,12 +136,14 @@ body {
  
 
   .np {
+    bottom: 20;
     position: relative;
-    display: flex;
+    display: inline-flex;
     width: 75px;
-    height: 40px;
+    height: 35px;
     background-color: #fff;
     justify-content: space-between;
+    left: 0px;
     padding: 0.6rem 0.8rem;
     border-radius: 20px;
     align-items: center;
@@ -154,7 +161,7 @@ body {
   
 }
 
-@media (min-width:375px) {
+/* @media (min-width:375px) {
   .slider{
     display: flex;
     justify-content: center;
@@ -170,9 +177,9 @@ body {
 }
 
 
-}
+} */
 
-@media (min-width:425px) {
+/* @media (min-width:425px) {
   .slider{
     display: flex;
     justify-content: center;
@@ -188,7 +195,7 @@ body {
 }
 
 
-}
+} */
 
 .content-main{
   display: grid;
@@ -230,3 +237,70 @@ p{
   font-weight: 300;
 }
 
+.desktop-bg-img{
+  display: none;
+}
+
+@media (min-width:768px) {
+
+
+  body {
+    justify-content: center;
+    background-position: bottom left;
+    background-size: 500px;
+} 
+
+  .two-divs {
+    display: flex;
+    align-items: flex-end;
+    grid-gap: 0;
+}
+
+.np {
+  position: absolute;
+  left: 437px;
+  top: 320px;
+}
+
+.slider{
+  order: 1;
+position: relative;
+}
+
+.desktop-bg-img {
+    position: absolute;
+    width: 397px;
+    left: -66px;
+    bottom: -76px;
+}
+
+.bg-img {
+  display: none;
+  width: 400px;
+  bottom: -81px;
+  left: 339px;
+}
+
+.slider-container {
+  width: 309px;
+  height: 100%;
+  max-width: 80rem;
+}
+
+.content {
+  background-image: url(./images/pattern-quotes.svg);
+  background-repeat: no-repeat;
+  background-size: 90px;
+  background-position: top;
+  display: grid;
+  text-align: left;
+  grid-gap: 20px;
+  position: relative;
+}
+
+.gap {
+  display: flex;
+  grid-gap: 10px;
+}
+
+}
