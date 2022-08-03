@@ -77,7 +77,7 @@ body {
 
   .two-divs {
     display: grid;
-    grid-gap: 50px;
+    grid-gap: 100px;
     justify-items: center;
 }
 
@@ -86,7 +86,7 @@ body {
 
   .bg-img {
     display: inline-block;
-    width: 272px;
+    width: 371px;
     z-index: -1;
     position: absolute;
 }
@@ -96,16 +96,16 @@ body {
 }
 
 .slider {
-  display: flex;
+  display:inline-flexbox;
   justify-content: center;
-  height: 216px;
+  height: 299px;
 }
 
 
 .slider-container {
     justify-items: center;
     display: grid;
-    width: 213px;
+    width: 296px;
     height: 100%;
     max-width: 80rem;
     position: relative;
@@ -133,11 +133,23 @@ body {
     object-fit: cover;
   
   }
- 
-
   .np {
+    left: 100px;
     bottom: 20;
     position: relative;
+    display: inline-flex;
+    width: 75px;
+    height: 35px;
+    background-color: #fff;
+    justify-content: space-between;
+    padding: 0.6rem 0.8rem;
+    border-radius: 20px;
+    align-items: center;
+    top: -19px;
+}
+
+  /* .np {
+    bottom: 20;
     display: inline-flex;
     width: 75px;
     height: 35px;
@@ -149,7 +161,7 @@ body {
     align-items: center;
     top: -44px;
     margin: 0 auto;
-}
+} */
 
 .btn {
     width: 8px;
